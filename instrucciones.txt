@@ -1,0 +1,14 @@
+Tener instalado la version 8.2.4 de PHP para poder instalar satisfactoriamente los drivers de mssql.
+
+Los drivers estan dentro de la carpeta drivers. Dichos 2 archivos lo copia en su directorio de instalacion de XAMPP:
+
+C:\xampp\php\ext
+
+Y lo pega ahi los dos archivos. Posteriormente lo tiene que configurar en el xampp con Apache y abre el archivo php.ini.
+
+Dentro de la seccion de {extension=xxx} pega estas dos lineas.
+
+extension=php_sqlsrv_82_ts_x64.dll
+extension=php_pdo_sqlsrv_82_ts_x64.dll
+
+Hecho eso reinicia su Apache XAMPP y tendra instalado los drivers y listos.
